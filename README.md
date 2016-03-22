@@ -1,11 +1,9 @@
-footer: © Ricardson Williams
-slidenumbers: true
-autoscale: true
-
 # Sobre min.......
 
 SysAdmin/Teste
+
 DevOPS
+
 Fotografo de Rua
 
 
@@ -26,25 +24,18 @@ Fotografo de Rua
 
 ![inline 20%](ansible_red.png)![inline 80%](ssh2_OLD.png)![inline 80%](data-center.png)
 
----
  
 ![inline 100%](ansible_works.png)
 
-- - -
+
 > **Ansible se destaca pela…….**
 
----
- 
 
 > **Escreve scripts YAML e sai usando….**
 
----
- 
 
 > **Simplicity is the ultimate sophistication.**
           Leonardo da Vinci
-
----
 
 
 # **Simplicidade…**
@@ -57,7 +48,6 @@ Fotografo de Rua
 - Fácil de configurar
 - Não necessita de agente (sshd)
 
----
  
 # **Modulos…**
 
@@ -65,7 +55,7 @@ Fotografo de Rua
 - Se comunicam através de JSON
 - Podem ser desenvolvidos nas principais linguagens. (Ruby, Python, etc)
 
----
+
 
 # **Não necessita de agente…**
 
@@ -74,7 +64,6 @@ Fotografo de Rua
 
 ![inline 80%](ssh.jpg)
 
----
   
 # **Seguro**
 
@@ -84,7 +73,6 @@ Fotografo de Rua
 
 ![inline 100%](openssh.gif)
 
----
  
 
 # **Idempotência…**
@@ -93,7 +81,6 @@ Fotografo de Rua
 
 ![inline 100%](idempotencia.png)
 
-----
 
 # **Poderoso**
 
@@ -103,7 +90,6 @@ Fotografo de Rua
 - Orquestração 
 - Alternativa a Capistrano/Fabric
 
----
 
 # **Instalando Ansible**
 
@@ -115,7 +101,6 @@ $ brew install ansible
 
 ```
 
----
 # **Tipos de Inventários**
 
 ```ini
@@ -132,7 +117,7 @@ Dinâmico (script)
   OpenShift
   OpenStack Nova
 ```
----
+
 # **/etc/ansible/hosts**
 
 ```ini
@@ -168,7 +153,6 @@ http_port=80
 ansible_ssh_user=apache
 
 ```
----
  
 # **Inventário Dinamico (ec2.py)**
 
@@ -178,7 +162,7 @@ $ ansible -i ec2.py -m ping tag_Ansible_Slave
 $ ansible -i ec2.py -u ubuntu us-east-1d -m ping
 
 ```
----
+
 
 # **Módulos**
 
@@ -198,7 +182,7 @@ $ ansible -i ec2.py -u ubuntu us-east-1d -m ping
 
 - **docker =>** gerenciamento de containers docker
 
----
+
 
 # **Fatos**
 
@@ -229,7 +213,6 @@ localhost | success >> {
     "changed": false
 }
 ```
----
 
 # **Comandos Ad-hoc**
 
@@ -281,7 +264,7 @@ $ ansible vagrant -m ping
     “ping”: “pong”
 }
 ```
----
+
 
 # **Ad-hoc…**
 
@@ -297,7 +280,7 @@ $ ansible vagrant -m command -a “uptime”
 192.168.60.6 | success | rc=0 >>
  14:27:02 up 11 min,  1 user,  load average: 0.00, 0.03, 0.05
 ```
-- - - 
+
 # **Playbook**
 
 - Playbook utiliza o formato YAML simplificado a idéia é não se tornar linguagem de programação e sim uma sintaxe **simples** de configuração[^2].
@@ -307,7 +290,6 @@ $ ansible vagrant -m command -a “uptime”
 
 [^2]:[Playbooks Intro](http://docs.ansible.com/)
 
----
 
 # Exemplo de playbook simples
 
@@ -341,7 +323,6 @@ $ ansible vagrant -m command -a “uptime”
     tags: selinux
 ```
 
----
 
 # Organizando melhor o playbook (roles)
 
@@ -358,8 +339,6 @@ $ ansible vagrant -m command -a “uptime”
 
 [^3]:[Playbooks Roles](https://docs.ansible.com/playbooks_roles.html) | [Ansible Roles](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-roles-to-abstract-your-infrastructure-environment)
 
-
----
 
 
 cat roles/init/tasks/main.yml
@@ -383,7 +362,6 @@ cat roles/init/tasks/main.yml
     tags: selinux
 ```
 
----
 
 cat roles/init/vars/main.yml
 
@@ -398,11 +376,7 @@ packages_base:
 ```
 
 
----
-
 # **Playbook - Tags**
 
 $ ansible-playbook site.yml --tags pkg_upgrade
-
----
 
