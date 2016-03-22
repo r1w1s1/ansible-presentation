@@ -1,14 +1,5 @@
 
 
-# Sobre min.......
-
-SysAdmin/Teste
-
-DevOPS
-
-Fotografo de Rua
-
-
 # Onde Podemos Usar?
 
 - Gerenciamento Configuração
@@ -18,18 +9,7 @@ Fotografo de Rua
 
 
 > Simples sintaxe e comunicação por SSH…
- 
 
-![inline 20%](ansible_red.png)![inline 80%](ssh2_OLD.png)![inline 80%](data-center.png)
-
- 
-![inline 100%](ansible_works.png)
-
-
- Ansible se destaca pela……
-
-
-> **Escreve scripts YAML e sai usando….**
 
 > **Simplicity is the ultimate sophistication.**
           Leonardo da Vinci
@@ -59,8 +39,6 @@ Fotografo de Rua
 - Utiliza SSH
 - Não necessita “deploy”
 
-![inline 80%](ssh.jpg)
-
   
 # Seguro
 
@@ -68,15 +46,13 @@ Fotografo de Rua
 - Não instala “daemons” vulneráveis nos Servidores/Nodes
 - Não necessita abertura “extra” de portas.
 
-![inline 100%](openssh.gif)
-
  
 
 # Idempotência…
 
 - Podemos rodar o playbook multiplas vezes sem alterar o resultado .
 
-![inline 100%](idempotencia.png)
+
 
 
 # Poderoso
