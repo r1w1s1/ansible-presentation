@@ -1,3 +1,5 @@
+
+
 # Sobre min.......
 
 SysAdmin/Teste
@@ -7,11 +9,7 @@ DevOPS
 Fotografo de Rua
 
 
-![inline 15%](twitter_logo_blue.png)/ricardson
-![inline 5%](meetup_logo.png)/ansible-Sao-Paulo
-
-
-# **Onde Podemos Usar?**
+# Onde Podemos Usar?
 
 - Gerenciamento Configuração
 - Provisionamento
@@ -28,17 +26,16 @@ Fotografo de Rua
 ![inline 100%](ansible_works.png)
 
 
-> **Ansible se destaca pela…….**
+ Ansible se destaca pela……
 
 
 > **Escreve scripts YAML e sai usando….**
-
 
 > **Simplicity is the ultimate sophistication.**
           Leonardo da Vinci
 
 
-# **Simplicidade…**
+# Simplicidade…
 
 - Sintax simples (YAML)
 - Segue uma ordenação
@@ -49,7 +46,7 @@ Fotografo de Rua
 - Não necessita de agente (sshd)
 
  
-# **Modulos…**
+# Modulos…
 
 - Centenas de modulos para tarefas triviais ou complexas
 - Se comunicam através de JSON
@@ -57,7 +54,7 @@ Fotografo de Rua
 
 
 
-# **Não necessita de agente…**
+# Não necessita de agente…
 
 - Utiliza SSH
 - Não necessita “deploy”
@@ -65,7 +62,7 @@ Fotografo de Rua
 ![inline 80%](ssh.jpg)
 
   
-# **Seguro**
+# Seguro
 
 - Utiliza SSH
 - Não instala “daemons” vulneráveis nos Servidores/Nodes
@@ -75,14 +72,14 @@ Fotografo de Rua
 
  
 
-# **Idempotência…**
+# Idempotência…
 
 - Podemos rodar o playbook multiplas vezes sem alterar o resultado .
 
 ![inline 100%](idempotencia.png)
 
 
-# **Poderoso**
+# Poderoso
 
 - Deploy Aplicação 
 - Gerenciamento de Configuração
@@ -91,7 +88,7 @@ Fotografo de Rua
 - Alternativa a Capistrano/Fabric
 
 
-# **Instalando Ansible**
+# Instalando Ansible
 
 ```
 $ yum install ansible
@@ -101,7 +98,7 @@ $ brew install ansible
 
 ```
 
-# **Tipos de Inventários**
+# Tipos de Inventários
 
 ```ini
 Simples INI (/etc/ansible/hosts)
@@ -118,7 +115,7 @@ Dinâmico (script)
   OpenStack Nova
 ```
 
-# **/etc/ansible/hosts**
+# /etc/ansible/hosts
 
 ```ini
 
@@ -154,7 +151,7 @@ ansible_ssh_user=apache
 
 ```
  
-# **Inventário Dinamico (ec2.py)**
+# Inventário Dinamico (ec2.py)
 
 ```ini
 
@@ -164,7 +161,7 @@ $ ansible -i ec2.py -u ubuntu us-east-1d -m ping
 ```
 
 
-# **Módulos**
+# Módulos
 
 - **apt/yum/portge/zypper (S.O) =>** Instalação de pacotes.
 
