@@ -1,7 +1,7 @@
 
 # Onde Podemos Usar?
 
-- Gerenciamento Configuração
+:ballot_box_with_check: Gerenciamento Configuração 
 - Provisionamento
 - Deploy
 - Alternativa a Capistrano/Fabric
