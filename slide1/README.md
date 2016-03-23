@@ -2,7 +2,7 @@
 # Onde Podemos Usar?
 
 :ballot_box_with_check: Gerenciamento Configuração 
- :black_circle: Provisionamento
+:ballot_box_with_check: Provisionamento
 - Deploy
 - Alternativa a Capistrano/Fabric
 
