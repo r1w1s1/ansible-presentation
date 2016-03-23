@@ -4,8 +4,10 @@
 :ballot_box_with_check: Gerenciamento Configuração
 
 :ballot_box_with_check: Provisionamento
-- Deploy
-- Alternativa a Capistrano/Fabric
+
+:ballot_box_with_check: Deploy
+
+:ballot_box_with_check: Alternativa a Capistrano/Fabric
 
 
 > Simples sintaxe e comunicação por SSH…
