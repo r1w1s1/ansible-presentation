@@ -1,7 +1,8 @@
 
 # Simplicidade…
 
-- Sintax simples (YAML)
+:ballot_box_with_check: Sintax simples (YAML)
+
 - Segue uma ordenação
 - Não necessita de agente (sshd)
 - Pode-se rodar a receita de uma desktop/servidor/laptop
