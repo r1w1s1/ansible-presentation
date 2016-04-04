@@ -1,5 +1,5 @@
 
-# Onde Podemos Usar?
+# Onde Podemos Usar??
 
 :ballot_box_with_check: Gerenciamento Configuração
 
@@ -15,7 +15,4 @@
 
 > **Simplicity is the ultimate sophistication.**
           Leonardo da Vinci
-
-
-
 
