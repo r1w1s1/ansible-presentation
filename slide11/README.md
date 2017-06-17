@@ -1,5 +1,5 @@
 
-# **Fatos** (Slide11)
+# **Fatos**
 
 ```json
 $ ansible localhost -m setup

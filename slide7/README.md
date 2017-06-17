@@ -1,9 +1,10 @@
- 
 
-# Poderoso (slide7)
 
-- Deploy Aplicação 
+# Poderoso
+
+- Deploy Aplicação
 - Gerenciamento de Configuração
 - Provisionamento
-- Orquestração 
+- Orquestração
 - Alternativa a Capistrano/Fabric
+

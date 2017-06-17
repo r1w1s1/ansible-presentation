@@ -1,6 +1,6 @@
- 
 
-# **Comandos Ad-hoc** (Slide12)
+
+# **Comandos Ad-hoc**
 
 Quando é necessario executar um comando rápido e não precisa salvar ao “playbook”, usamos o ansible em linha de comando ou seja em ad-hoc mode.[^1]
 
@@ -20,7 +20,7 @@ $ ansible saopaulo -m yum -a “name=epel-release state=present”
 $ ansible riodejaneiro -m yum -a “name=httpd state=absent”
 
 #Inicia o serviço do apache
-$ ansible saorio -m service -a “name=httpd state=started” 
+$ ansible saorio -m service -a “name=httpd state=started”
 
 #Habilitando o start do serviço
 $ ansible saorio -m service -a “name=httpd enabled=yes”
@@ -36,17 +36,17 @@ $ ansible vagrant -m ping
 
 ```ini
 192.168.60.5 | success >> {
-    “changed”: false, 
+    “changed”: false,
     “ping”: “pong”
 }
 
 192.168.60.4 | success >> {
-    “changed”: false, 
+    “changed”: false,
     “ping”: “pong”
 }
 
 192.168.60.6 | success >> {
-    “changed”: false, 
+    “changed”: false,
     “ping”: “pong”
 }
 ```

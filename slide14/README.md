@@ -1,5 +1,5 @@
- 
-# Organizando melhor o playbook (roles) (Slide14)
+
+# Organizando melhor o playbook (roles)
 
   Para melhor organização dos nossos playbooks criamos o que chamamos de **roles**[^3] que seria basicamente a estrutura abaixo.
 
@@ -28,12 +28,12 @@ cat roles/init/tasks/main.yml
 
   - name: Upgrade all packages
     yum: name=* state=latest
-    when: ansible_os_family == ‘RedHat’ 
+    when: ansible_os_family == ‘RedHat’
     tags: pkg_upgrade
 
   - name: Disable SELinux
     selinux: state=disabled
-    when: ansible_os_family == ‘RedHat’ 
+    when: ansible_os_family == ‘RedHat’
     tags: selinux
 ```
 
@@ -46,6 +46,6 @@ cat roles/init/vars/main.yml
 packages_base:
     - vim
     - telnet
-    - git 
+    - git
     - epel-release
 ```

@@ -1,5 +1,5 @@
 
-# Tipos de Inventários (slide9)
+# Tipos de Inventários
 
 ```ini
 Simples INI (/etc/ansible/hosts)
@@ -16,7 +16,7 @@ Dinâmico (script)
   OpenStack Nova
 ```
 
-# /etc/ansible/hosts 
+# /etc/ansible/hosts
 
 ```ini
 
@@ -51,7 +51,7 @@ http_port=80
 ansible_ssh_user=apache
 
 ```
- 
+
 # Inventário Dinamico (ec2.py)
 
 ```ini

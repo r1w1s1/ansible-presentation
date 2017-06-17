@@ -1,5 +1,5 @@
 
-# Seguro (slide5)
+# Seguro
 
 - Utiliza SSH
 - Não instala “daemons” vulneráveis nos Servidores/Nodes

@@ -1,5 +1,5 @@
 
-# Instalando Ansible (slide8)
+# Instalando Ansible
 
 ```
 $ yum install ansible

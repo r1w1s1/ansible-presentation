@@ -1,6 +1,6 @@
- 
 
-# Módulos  (Slide10)
+
+# Módulos
 
 - **apt/yum/portge/zypper (S.O) =>** Instalação de pacotes.
 

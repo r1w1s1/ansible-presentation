@@ -1,5 +1,5 @@
 
-# **Playbook - Tags** (Slide15)
+# **Playbook - Tags**
 
 ```
 $ ansible-playbook site.yml --tags pkg_upgrade

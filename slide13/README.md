@@ -1,6 +1,6 @@
- 
 
-# **Playbook** (Slide13)
+
+# **Playbook**
 
 - Playbook utiliza o formato YAML simplificado a idéia é não se tornar linguagem de programação e sim uma sintaxe **simples** de configuração[^2].
 
@@ -15,14 +15,14 @@
 
 ```
 - - -
-- hosts: app1 
+- hosts: app1
   gather_facts: yes
   sudo: true
   vars:
     packages_base:
         - vim
         - telnet
-        - git 
+        - git
         - epel-release
   tasks:
   - name: Install Packages
